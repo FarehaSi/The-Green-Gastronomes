@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-farehasi-the-green-gastr-ebx0b1tq1g.us2.codeanyapp.com',
-                 'green-gastronomes.herokapp.com']
+                 'green-gastronomes.herokapp.com',
+                 'localhost',
+                 'green-gastronomes-1952abf961a7.herokuapp.com',]
 
 
 # Application definition
