@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Gastronomes</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Green Gastronomes</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Nav II</li>
+                <li>Nav III</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock content %}
+    </main>
+    <footer>
+        Some footer content.
+    </footer>
+</body>
+
+</html>
