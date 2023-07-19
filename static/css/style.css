@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Headings */
+
+h1,
+h2 {
+    font-family: 'Lobster';
+}
+
+/* Navigation */
+
+.navbar-brand {
+    font-size: 2.5rem;
+}
+
+/* Hero image and cover text */
+
+.hero-image {
+    background-image: url('https://res.cloudinary.com/djnre3b2t/image/upload/v1689764397/hero-image_qckq2s.png');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+}
+
+/* Recipes on Home Page */
+
+.recipe-link {
+    color: inherit;
+}
+
+/* Footer */
+
+.socials li {
+    display: inline-block;
+}
+
+footer .socials li {
+    margin-left: 10px;
+}
+
+footer .socials li a {
+    color: inherit;
+}
