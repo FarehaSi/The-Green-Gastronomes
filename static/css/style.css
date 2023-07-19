@@ -42,6 +42,37 @@ h2 {
     color: inherit;
 }
 
+/* Recipe Details Page */
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #0c7c3f;
+    color: white;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.recipe-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.recipe-subtitle {
+    margin-left: 5%;
+}
+
 /* Footer */
 
 .socials li {

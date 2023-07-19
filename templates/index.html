@@ -31,7 +31,7 @@
                                     <p>Author: {{ recipe.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="recipe-link">
+                            <a href="{% url 'recipe_detail' recipe.slug  %}" class="recipe-link">
                                 <h2 class="card-title">{{ recipe.title }}</h2>
                                 <p class="card-text">{{ recipe.excerpt }}</p>
                             </a>
