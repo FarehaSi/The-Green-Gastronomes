@@ -7,7 +7,8 @@ body {
 /* Headings */
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Lobster';
 }
 
@@ -71,6 +72,19 @@ h2 {
 
 .recipe-subtitle {
     margin-left: 5%;
+}
+
+/* Sign-in/ Sign-up page */
+
+.btn-signup {
+    background-color: #0c7c3f;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #0c7c3f;
 }
 
 /* Footer */

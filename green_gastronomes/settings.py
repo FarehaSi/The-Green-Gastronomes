@@ -32,7 +32,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-farehasi-the-green-gastr-ebx0b1tq1g.us2.codeanyapp.com',
                  'green-gastronomes.herokapp.com',
                  'localhost',
-                 'green-gastronomes-1952abf961a7.herokuapp.com',]
+                 'green-gastronomes-1952abf961a7.herokuapp.com',
+                 '8006-farehasi-the-green-gastr-ebx0b1tq1g.us2.codeanyapp.com',]
 
 
 # Application definition
@@ -43,12 +44,21 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'blog',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -145,3 +155,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Authorization
+ACCOUNT_EMAIL_VERIFICATION = 'none'
