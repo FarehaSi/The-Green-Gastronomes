@@ -74,6 +74,19 @@ h3 {
     margin-left: 5%;
 }
 
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
 /* Sign-up/ Login/ Logout page */
 
 .btn-signup {
