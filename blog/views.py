@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Recipe
-from .forms import CommentForm
+from .models import Recipe, UserProfile
+from .forms import CommentForm, UserProfileForm
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
 class RecipeList(generic.ListView):
@@ -79,3 +81,27 @@ class RecipeLike(View):
             recipe.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+
+
+@method_decorator(login_required, name="dispatch")
+class UserProfile(View):
+    def get(self, request, *args, **kwargs):
+        user_profile = UserProfile.objects.get(user=request.user)
+        profile_form = UserProfileForm(instance=user_profile)
+        return render(
+            request,
+            "user_profile.html",
+            {"user_profile": user_profile, "profile_form": profile_form},
+        )
+
+    def post(self, request, *args, **kwargs):
+        user_profile = UserProfile.objects.get(user=request.user)
+        profile_form = UserProfileForm(
+            request.POST, request.FILES, instance=user_profile)
+        if profile_form.is_valid():
+            profile_form.save()
+        return render(
+            request,
+            "user_profile.html",
+            {"user_profile": user_profile, "profile_form": profile_form},
+        )

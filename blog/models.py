@@ -53,6 +53,7 @@ class UserProfile(models.Model):
     name = models.CharField(max_length=80)
     email = models.EmailField()
     profile_picture = CloudinaryField('image', default='placeholder')
+    objects = models.Manager()
 
     def __str__(self):
         return self.user.username

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <h2>User Profile</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="id_profile_picture">Profile Picture:</label>
+            {% if "placeholder" in userprofile.profile_picture.url %}
+            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png">
+            {% else %}
+            <img src="{{ user_profile.profile_picture.url }}">
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            <input type="text" id="id_name" name="name" value="{{ user_profile.name }}" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="id_email">Email:</label>
+            <input type="email" id="id_email" name="email" value="{{ user_profile.email }}" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="id_profile_picture">Profile Picture:</label>
+            <input type="file" id="id_profile_picture" name="profile_picture" class="form-control-file">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>
+
+{%endblock%}
