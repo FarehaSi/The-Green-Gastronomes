@@ -74,7 +74,7 @@ h3 {
     margin-left: 5%;
 }
 
-/* Sign-in/ Sign-up page */
+/* Login/ Logout page */
 
 .btn-signup {
     background-color: #0c7c3f;
@@ -85,6 +85,16 @@ h3 {
 .btn-signup:active {
     background-color: #fff;
     color: #0c7c3f;
+}
+
+.link {
+    color: #0c7c3f;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    text-decoration: underline;
 }
 
 /* Footer */
