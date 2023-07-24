@@ -14,3 +14,42 @@ Agile Methodology has been used to plan this project. This was implemented throu
 - **To Do:** All the User stories were initially entered in the *To Do* column.
 - **In Progress:** During the development phase, the stories were moved into the *In Progress* column.
 - **Done:** In the final stage, they were moved into *Done* as the development on the respective stories was completed.
+### Epics & User Stories
+The following epics were created which were further developed into 20 specific User Stories.
+#### Epic 1: Recipe Management
+This epic focuses on all aspects related to managing recipes on the platform. It includes providing an admin interface for administrators to post recipes with necessary details and enabling users to submit their own recipes. The epic also covers the functionality for administrators to review and approve user-submitted recipes to ensure content quality and appropriateness. Additionally, users should be able to edit or delete their own recipes as needed.
+##### Related User Stories
+- As an administrator I can have an admin interface where I can post recipes with all the necessary details so that I can share them with users.
+- As a user I can submit my own recipes so that I can share my recipes with others.
+- As an administrator I can review and approve user-submitted recipes before they are published so that quality and appropriateness of the content can be ensured.
+- As a user I can edit and delete my own recipes so that I can make modifications or remove them if needed.
+#### Epic 2: User Authentication and Profile
+The second epic deals with user authentication and profile management. It encompasses user registration, allowing users to create accounts to access the application's features. The epic also covers secure login and authentication mechanisms to protect user accounts. Furthermore, it involves providing users with the ability to manage their personal information through their profiles.
+##### Related User Stories
+- As a user I can register an account so that I can access the features of the application.
+- As a user I can log in to my account securely so that I can access my personalized content and perform actions that require authentication.
+- As a user I can have a user profile so that I can view and update my personal information.
+#### Epic 3: User Interaction with Recipes
+This epic revolves around user interaction with recipes on the platform. It includes enabling users to view a list of available recipes, detailed views for individual recipes, and the ability to leave comments on recipes. Users should also be able to edit or delete their comments as needed. Additionally, users and administrators can view the number of likes and comments on each post, allowing them to gauge popularity and engagement.
+##### Related User Stories
+- As a user I can view a list of recipes so that I can explore the available options.
+- As a user I can view the details of a specific recipe so that I can follow the recipe to prepare the dish.
+- As a user I can leave comments on recipes so that I can share my feedback or ask questions.
+- As a user I can edit and delete my own comments on recipes so that I can make changes or remove them if I want to.
+- As a user / administrator I can view the number of likes on each post so that I can see which is the most popular or viral.
+- As a user/ administrator I can view comments on an individual post so that I can read the conversation.
+- As a user I can like a post so that I can interact with the content.
+#### Epic 4: User Interface and User Experience
+The fourth epic focuses on enhancing the user interface and overall user experience of the application. It includes designing a user-friendly and visually appealing interface with proper styling and responsive design. The epic also addresses graceful error handling and informative error messages to help users understand and resolve any issues that may occur during their interactions with the platform.
+##### Related User Stories
+- As an administrator I can provide a user-friendly and visually appealing interface, with proper styling and responsive design so that user experience can be enhanced.
+- As an administrator I can have the application handle errors gracefully and provide informative error messages so that users can understand and resolve any issues that may occur.
+#### Epic 5: Security and Privacy
+This epic centers around ensuring the security and privacy of sensitive information on the platform. It includes implementing robust authentication and authorization mechanisms to protect user accounts and sensitive data. Additionally, the epic involves the approval process for user comments to filter out objectionable content and maintain a safe environment for users.
+##### Related User Stories
+- As an administrator I can have appropriate authentication and authorization mechanisms in place so that security of sensitive information is ensured.
+- As an administrator I can approve or disapprove comments so that I can filter out objectionable comments.
+#### Epic 6: Drafts and Unpublished Content
+The final epic deals with the management of drafts and unpublished content. It includes providing administrators with the ability to create draft posts and save them for completion at a later time. This functionality can be useful for preparing content without immediately publishing it to the public.
+##### Related User Stories
+- As a administrator I can create draft posts so that I can finish writing the content later.
