@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Recipe, UserProfile
+from .models import Recipe, UserProfile as UserProfileModel
 from .forms import CommentForm, UserProfileForm
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.contrib import messages
+from .forms import RecipeForm
 
 
 class RecipeList(generic.ListView):
@@ -86,7 +88,7 @@ class RecipeLike(View):
 @method_decorator(login_required, name="dispatch")
 class UserProfile(View):
     def get(self, request, *args, **kwargs):
-        user_profile = UserProfile.objects.get(user=request.user)
+        user_profile = UserProfileModel.objects.get(user=request.user)
         profile_form = UserProfileForm(instance=user_profile)
         return render(
             request,
@@ -95,7 +97,7 @@ class UserProfile(View):
         )
 
     def post(self, request, *args, **kwargs):
-        user_profile = UserProfile.objects.get(user=request.user)
+        user_profile = UserProfileModel.objects.get(user=request.user)
         profile_form = UserProfileForm(
             request.POST, request.FILES, instance=user_profile)
         if profile_form.is_valid():
@@ -105,3 +107,44 @@ class UserProfile(View):
             "user_profile.html",
             {"user_profile": user_profile, "profile_form": profile_form},
         )
+
+
+@login_required
+def add_recipe(request):
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            recipe = form.save(commit=False)
+            recipe.author = request.user
+            recipe.save()
+            messages.success(
+                request, 'Recipe added successfully and awaiting admin approval.')
+            return redirect('user_profile')
+    else:
+        form = RecipeForm()
+    return render(request, 'add_recipe.html', {'form': form})
+
+
+@login_required
+def edit_recipe(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id, author=request.user)
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES, instance=recipe)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'Recipe updated successfully and awaiting admin approval.')
+            return redirect('user_profile')
+    else:
+        form = RecipeForm(instance=recipe)
+    return render(request, 'edit_recipe.html', {'form': form, 'recipe': recipe})
+
+
+@login_required
+def delete_recipe(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id, author=request.user)
+    if request.method == 'POST':
+        recipe.delete()
+        messages.success(request, 'Recipe deleted successfully.')
+        return redirect('user_profile')
+    return render(request, 'delete_recipe.html', {'recipe': recipe})

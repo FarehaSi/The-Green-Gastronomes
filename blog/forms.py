@@ -1,4 +1,4 @@
-from .models import Comment, UserProfile
+from .models import Comment, UserProfile, Recipe
 from django import forms
 
 
@@ -12,3 +12,9 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = ('name', 'email', 'profile_picture')
+
+
+class RecipeForm(forms.ModelForm):
+    class Meta:
+        model = Recipe
+        fields = ['title', 'slug', 'excerpt', 'instructions', 'featured_image']
