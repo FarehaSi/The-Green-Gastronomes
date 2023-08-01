@@ -9,9 +9,10 @@
         <div class="form-group">
             <label for="id_profile_picture">Profile Picture:</label>
             {% if "placeholder" in user_profile.profile_picture.url %}
-            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png">
+            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png"
+                class="profile-picture">
             {% else %}
-            <img src="{{ user_profile.profile_picture.url }}">
+            <img src="{{ user_profile.profile_picture.url }}" class="profile-picture">
             {% endif %}
         </div>
 
@@ -38,8 +39,8 @@
         {% for recipe in user.recipes_posted.all %}
         <li>
             {{ recipe.title }}
-            <a href="{% url 'edit_recipe' recipe.id %}">Edit</a>
-            <a href="{% url 'delete_recipe' recipe.id %}">Delete</a>
+            <a href="{% url 'edit_recipe' recipe.id %}" class="link">Edit</a>
+            <a href="{% url 'delete_recipe' recipe.id %}" class="link">Delete</a>
         </li>
         {% endfor %}
     </ul>

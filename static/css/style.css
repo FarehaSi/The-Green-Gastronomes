@@ -110,6 +110,41 @@ h3 {
     text-decoration: underline;
 }
 
+/* User Profile Page */
+
+img.profile-picture {
+    height: 33vh;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #0c7c3f;
+    color: #fff;
+    border-color: #0c7c3f;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fff;
+    color: #0c7c3f;
+    border-color: #0c7c3f;
+}
+
+.link {
+    color: #0c7c3f;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    text-decoration: underline;
+    color: #0c7c3f;
+}
+
+
 /* Footer */
 
 .socials li {
