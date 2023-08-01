@@ -1,5 +1,6 @@
 from .models import Comment, UserProfile, Recipe
 from django import forms
+from django_summernote.widgets import SummernoteWidget
 
 
 class CommentForm(forms.ModelForm):
@@ -15,6 +16,9 @@ class UserProfileForm(forms.ModelForm):
 
 
 class RecipeForm(forms.ModelForm):
+    instructions = forms.CharField(
+        widget=SummernoteWidget())
+
     class Meta:
         model = Recipe
-        fields = ['title', 'slug', 'excerpt', 'instructions', 'featured_image']
+        fields = ['title', 'excerpt', 'instructions', 'featured_image']
