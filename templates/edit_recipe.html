@@ -5,8 +5,31 @@
     <h2>Edit Recipe</h2>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">Title</label>
+            <input type="text" class="form-control" id="{{ form.title.id_for_label }}" name="{{ form.title.html_name }}"
+                value="{{ form.title.value|default:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="{{ form.excerpt.id_for_label }}">Excerpt</label>
+            <input type="text" class="form-control" id="{{ form.excerpt.id_for_label }}"
+                name="{{ form.excerpt.html_name }}" value="{{ form.excerpt.value|default:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="{{ form.instructions.id_for_label }}">Instructions</label>
+            {{ form.instructions }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.featured_image.id_for_label }}">Featured Image</label>
+            <input type="file" class="form-control-file" id="{{ form.featured_image.id_for_label }}"
+                name="{{ form.featured_image.html_name }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
     </form>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#{{ form.instructions.id_for_label }}').summernote();
+    });
+</script>
 {% endblock %}
