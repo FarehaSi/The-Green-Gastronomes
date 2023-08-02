@@ -53,3 +53,10 @@ This epic centers around ensuring the security and privacy of sensitive informat
 The final epic deals with the management of drafts and unpublished content. It includes providing administrators with the ability to create draft posts and save them for completion at a later time. This functionality can be useful for preparing content without immediately publishing it to the public.
 ##### Related User Stories
 - As a administrator I can create draft posts so that I can finish writing the content later.
+## Design
+## Features
+## Technologies Used
+## Testing
+## Bugs
+## Deployment
+## Credits
