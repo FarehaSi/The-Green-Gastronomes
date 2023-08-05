@@ -117,7 +117,6 @@ def add_recipe(request):
         if form.is_valid():
             recipe = form.save(commit=False)
             recipe.author = request.user
-            # Generate a unique slug from the title
             recipe.slug = slugify(recipe.title)
             recipe.save()
             messages.success(

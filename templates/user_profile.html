@@ -3,6 +3,9 @@
 {% block content %}
 <div class="container mt-4">
     <h2>User Profile</h2>
+    {% for message in messages %}
+    <div id="success-message" class="alert alert-success">{{ message }}</div>
+    {% endfor %}
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
@@ -47,4 +50,14 @@
 
     <a href="{% url 'add_recipe' %}" class="btn btn-primary">Add Recipe</a>
 </div>
+
+<script>
+    setTimeout(function () {
+        var successMessage = document.getElementById("success-message");
+        if (successMessage) {
+            successMessage.style.display = "none";
+        }
+    }, 5000);
+</script>
+
 {% endblock %}
