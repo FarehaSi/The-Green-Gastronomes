@@ -18,7 +18,6 @@ class RecipeList(generic.ListView):
 
 
 class RecipeDetail(View):
-
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
@@ -40,8 +39,8 @@ class RecipeDetail(View):
             },
         )
 
+    @method_decorator(login_required)
     def post(self, request, slug, *args, **kwargs):
-
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(
@@ -52,9 +51,8 @@ class RecipeDetail(View):
 
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
-            comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
+            comment.user = request.user
             comment.recipe = recipe
             comment.save()
         else:
@@ -67,7 +65,7 @@ class RecipeDetail(View):
                 "recipe": recipe,
                 "comments": comments,
                 "liked": liked,
-                "comment_form": CommentForm(),
+                "comment_form": comment_form,
                 "comments": comments,
                 "commented": True
             },
