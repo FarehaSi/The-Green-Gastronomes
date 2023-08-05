@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from .models import Recipe, UserProfile as UserProfileModel
 from .forms import CommentForm, UserProfileForm
@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.contrib import messages
 from .forms import RecipeForm
+from django.utils.text import slugify
 
 
 class RecipeList(generic.ListView):
@@ -116,6 +117,8 @@ def add_recipe(request):
         if form.is_valid():
             recipe = form.save(commit=False)
             recipe.author = request.user
+            # Generate a unique slug from the title
+            recipe.slug = slugify(recipe.title)
             recipe.save()
             messages.success(
                 request, 'Recipe added successfully and awaiting admin approval.')
