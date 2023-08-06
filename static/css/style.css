@@ -35,12 +35,31 @@ h3 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Common Link Styles */
+
+.link {
+    color: #0c7c3f;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    text-decoration: underline;
+    color: #0c7c3f;
 }
 
 /* Recipes on Home Page */
 
 .recipe-link {
     color: inherit;
+}
+
+.recipe-link:hover {
+    color: #0c7c3f;
 }
 
 /* Recipe Details Page */
@@ -100,16 +119,6 @@ h3 {
     color: #0c7c3f;
 }
 
-.link {
-    color: #0c7c3f;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    text-decoration: underline;
-}
-
 /* User Profile Page */
 
 img.profile-picture {
@@ -133,18 +142,6 @@ h3 {
     border-color: #0c7c3f;
 }
 
-.link {
-    color: #0c7c3f;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    text-decoration: underline;
-    color: #0c7c3f;
-}
-
-
 /* Footer */
 
 .socials li {
@@ -157,4 +154,24 @@ footer .socials li {
 
 footer .socials li a {
     color: inherit;
+}
+
+/* Media Queries */
+
+@media (max-width: 465px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
