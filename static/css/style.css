@@ -25,6 +25,7 @@ h3 {
     background-size: cover;
     background-position: center;
     height: 75vh;
+    position: relative;
 }
 
 .hero-content {
