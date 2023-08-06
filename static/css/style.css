@@ -70,7 +70,6 @@ h3 {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
     width: 100%;
 }
 
@@ -86,12 +85,13 @@ h3 {
 }
 
 .recipe-title {
-    margin-top: 20%;
+    margin-top: 50%;
     margin-left: 5%;
 }
 
 .recipe-subtitle {
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .btn-like {
@@ -105,6 +105,16 @@ h3 {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.fa-comments {
+    color: #0c7c3f;
+}
+
+.comment-user {
+    font-family: 'Lobster';
+    font-size: 1.25rem;
+    color: #0c7c3f;
 }
 
 /* Sign-up/ Login/ Logout page */
@@ -159,6 +169,17 @@ footer .socials li a {
 
 /* Media Queries */
 
+@media (max-width: 768px) {
+    .masthead-image {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .recipe-title {
+        margin-top: 5%;
+    }
+}
+
 @media (max-width: 465px) {
     .navbar-brand {
         font-size: 1.5rem;
@@ -175,4 +196,5 @@ footer .socials li a {
     .hero-content p {
         font-size: 1rem;
     }
+
 }
