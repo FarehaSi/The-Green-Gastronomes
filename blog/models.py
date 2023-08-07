@@ -9,7 +9,7 @@ STATUS = ((0, 'Draft'), (1, 'Published'))
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
-    email = models.EmailField()
+    email = models.EmailField(blank=False, unique=True)
     profile_picture = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
@@ -23,9 +23,9 @@ class Recipe(models.Model):
         User, on_delete=models.CASCADE, related_name='recipes_posted'
     )
     featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(blank=True)
+    excerpt = models.TextField(blank=False)
     # ingredients = ArrayField(models.TextField())
-    instructions = models.TextField()
+    instructions = models.TextField(blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
