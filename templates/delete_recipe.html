@@ -1,13 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container mt-4">
-    <h2>Delete Recipe</h2>
-    <p>Are you sure you want to delete "{{ recipe.title }}"?</p>
-    <form method="post">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-danger">Delete Recipe</button>
-        <a href="{% url 'user_profile' %}" class="btn btn-secondary">Cancel</a>
-    </form>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <h3>Delete Recipe</h3>
+                <p>Are you sure you want to delete "{{ recipe.title }}"?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <form method="post">
+                    {% csrf_token %}
+                    <button class="btn" type="submit">Delete Recipe</button>
+                    <a href="{% url 'user_profile' %}" class="btn">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

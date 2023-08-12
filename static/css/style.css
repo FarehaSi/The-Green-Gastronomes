@@ -40,7 +40,7 @@ h3 {
     width: 100%;
 }
 
-/* Common Link Styles */
+/* Common Link & Button Styles */
 
 .link {
     color: #0c7c3f;
@@ -51,6 +51,19 @@ h3 {
 .link:active {
     text-decoration: underline;
     color: #0c7c3f;
+}
+
+.btn {
+    background-color: #0c7c3f;
+    color: #fff;
+    border-color: #0c7c3f;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fff;
+    color: #0c7c3f;
+    border-color: #0c7c3f;
 }
 
 /* Recipes on Home Page */
@@ -117,18 +130,7 @@ h3 {
     color: #0c7c3f;
 }
 
-/* Sign-up/ Login/ Logout page */
-
-.btn-signup {
-    background-color: #0c7c3f;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #0c7c3f;
-}
+/* Sign-up/ Login/ Logout page/ */
 
 .wrapper {
     min-height: calc(100vh - 160px);
@@ -142,19 +144,6 @@ img.profile-picture {
 
 h3 {
     margin-top: 30px;
-}
-
-.btn {
-    background-color: #0c7c3f;
-    color: #fff;
-    border-color: #0c7c3f;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #fff;
-    color: #0c7c3f;
-    border-color: #0c7c3f;
 }
 
 /* Footer */
