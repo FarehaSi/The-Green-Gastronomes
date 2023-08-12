@@ -130,6 +130,10 @@ h3 {
     color: #0c7c3f;
 }
 
+.wrapper {
+    min-height: calc(100vh - 160px);
+}
+
 /* User Profile Page */
 
 img.profile-picture {
