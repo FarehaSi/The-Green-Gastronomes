@@ -118,7 +118,7 @@ def add_recipe(request):
             recipe.slug = slugify(recipe.title)
             recipe.save()
             messages.success(
-                request, 'Recipe added successfully and awaiting admin approval.')
+                request, 'Recipe added successfully and awaiting admin approval.', extra_tags='custom')
             return redirect('user_profile')
     else:
         form = RecipeForm()
@@ -133,7 +133,7 @@ def edit_recipe(request, recipe_id):
         if form.is_valid():
             form.save()
             messages.success(
-                request, 'Recipe updated successfully and awaiting admin approval.')
+                request, 'Recipe updated successfully and awaiting admin approval.', extra_tags='custom')
             return redirect('user_profile')
     else:
         form = RecipeForm(instance=recipe)
@@ -145,6 +145,6 @@ def delete_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id, author=request.user)
     if request.method == 'POST':
         recipe.delete()
-        messages.success(request, 'Recipe deleted successfully.')
+        messages.success(request, 'Recipe deleted successfully.', extra_tags='custom')
         return redirect('user_profile')
     return render(request, 'delete_recipe.html', {'recipe': recipe})

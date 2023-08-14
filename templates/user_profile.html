@@ -3,17 +3,20 @@
 {% block content %}
 <div class="container mt-4">
     <h2>User Profile</h2>
-    <!-- {% for message in messages %} -->
-    <div id="success-message" class="alert alert-success">{{ message }}</div>
-    <!-- {% endfor %} -->
+    
+    {% for message in messages %}
+        {% if 'custom' in message.tags %}
+            <div id="success-message" class="alert alert-success">{{ message }}</div>
+        {% endif %}
+    {% endfor %}
+    
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
         <div class="form-group">
             <label for="id_profile_picture">Profile Picture:</label>
             {% if "placeholder" in user_profile.profile_picture.url %}
-            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png"
-                class="profile-picture">
+            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png" class="profile-picture">
             {% else %}
             <img src="{{ user_profile.profile_picture.url }}" class="profile-picture">
             {% endif %}
