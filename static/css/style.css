@@ -20,6 +20,10 @@ h3 {
 
 /* Hero image and cover text */
 
+.hero-container {
+    padding: 0;
+}
+
 .hero-image {
     background-image: url('https://res.cloudinary.com/djnre3b2t/image/upload/v1689764397/hero-image_qckq2s.png');
     background-size: cover;
