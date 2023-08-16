@@ -40,10 +40,9 @@ This epic revolves around user interaction with recipes on the platform. It incl
 - As a user/ administrator I can view comments on an individual post so that I can read the conversation.
 - As a user I can like a post so that I can interact with the content.
 #### Epic 4: User Interface and User Experience
-The fourth epic focuses on enhancing the user interface and overall user experience of the application. It includes designing a user-friendly and visually appealing interface with proper styling and responsive design. The epic also addresses graceful error handling and informative error messages to help users understand and resolve any issues that may occur during their interactions with the platform.
+The fourth epic focuses on enhancing the user interface and overall user experience of the application. It includes designing a user-friendly and visually appealing interface with proper styling and responsive design.
 ##### Related User Stories
 - As an administrator I can provide a user-friendly and visually appealing interface, with proper styling and responsive design so that user experience can be enhanced.
-- As an administrator I can have the application handle errors gracefully and provide informative error messages so that users can understand and resolve any issues that may occur.
 #### Epic 5: Comment Moderation for a Safe User Environment
 This epic centers around enabling administrators to review and manage comments for the purpose of filtering out objectionable content and maintaining a secure user environment. It includes the implementation of an efficient comment approval process that empowers administrators to approve or disapprove comments. By doing so, the platform ensures that objectionable content is effectively filtered out, creating a safe and welcoming space for users.
 ##### Related User Stories
