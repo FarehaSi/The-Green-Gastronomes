@@ -52,6 +52,30 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Design
 ## Features
 ## Technologies Used
+### Languages Used
+* [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
+* [CSS 3](https://en.wikipedia.org/wiki/CSS)- to provide extra styling to the site
+* [JavaScript](https://www.javascript.com/)- Minimum javascript was used to fade out alerts after a few seconds.
+* [Python](https://www.python.org/)- To provide the functionality to the site. Packages used in the project can be found in requirements.txt
+### Django Packages
+* [Gunicorn](https://gunicorn.org/)- As the server for Heroku.
+* [Cloudinary](https://cloudinary.com/)- Was used to host the static files and media for the site.
+* [Dj_database_url](https://pypi.org/project/dj-database-url/)- To parse the database URL from the environment variables in Heroku.
+* [Psycopg2](https://pypi.org/project/psycopg2/)- As an adaptor for Python and PostgreSQL databases.
+* [Summernote](https://summernote.org/)- As a text editor.
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
+### Frameworks - Libraries - Programs Used
+* [Django](https://www.djangoproject.com/) was used as the framework for the back-end logic of the project. Django enables rapid and secure development.
+* [Bootstrap](https://getbootstrap.com/)- Used to style the website, add responsiveness and interactivity.
+* [Git](https://git-scm.com/)- Used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+* [GitHub](https://github.com/)- Used to store the project's code after being pushed from Git.
+* [Heroku](https://id.heroku.com)- Used to deploy the live project.
+* [PostgreSQL](https://www.postgresql.org/)- Database used through heroku.
+* [Balsamiq](https://balsamiq.com/)- To build the wireframes for the project.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to inspect page elements, debug, troubleshoot and test features and adjust property values. Using the Lighthouse extension installed in Chrome Browser, the performance report was generated.
+* [Google Fonts:](https://fonts.google.com/) used for the Roboto font
+* [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 ## Testing
 ## Bugs
 #### Solved Bugs
