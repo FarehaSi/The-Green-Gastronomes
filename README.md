@@ -55,6 +55,20 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Testing
 ## Bugs
 ## Deployment
+The site was deployed via Heroku using the following steps:
+- Logged in to Heroku
+- From the main Heroku Dashboard page selected 'New' and then 'Create New App'
+- Gave the project a name and selected suitable region, then clicked on 'Create App'
+- Navigated to the Settings tab
+- Under 'Config Vars' clicked on 'Reveal Config Vars'
+- Added the following keys with their respective values:
+  1. DATABASE_URL
+  2. PORT
+  3. SECRET_KEY
+  4. DISABLE_COLLECTSTATIC (removed before final deployment)
+  5. CLOUDINARY_URL
+  6. HEROKU_POSTGRESQL_WHITE_URL
+   
 #### Cloning
 To create a clone of the repository within your local development environment which makes it easier to fix merge conflicts, add or remove files, and push larger commits, follow these steps:
 - Log in to GitHub, access the specific GitHub Repository [The Green Gastronomes](https://github.com/FarehaSi/The-Green-Gastronomes)
