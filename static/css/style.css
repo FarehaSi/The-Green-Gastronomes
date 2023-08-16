@@ -18,7 +18,7 @@ h3 {
     font-size: 2.5rem;
 }
 
-/* Hero image and cover text */
+/* Home Page */
 
 .hero-container {
     padding: 0;
@@ -42,6 +42,10 @@ h3 {
     padding: 2rem;
     max-width: 500px;
     width: 100%;
+}
+
+.page-link {
+    color: #0c7c3f;
 }
 
 /* Common Link & Button Styles */
