@@ -8,7 +8,6 @@ The site aims to achieve the following:
 - **User-Friendly Experience:** The goal has been to provide a seamless and enjoyable user experience through an intuitive and visually appealing interface. The website aims to be easy to navigate, making it effortless for users to explore recipes and engage with the content.
 - **Quality Content Curation:** Ensuring the highest quality of content is crucial. The site administrators review and approve user-submitted recipes and comments to maintain the platform's integrity and present the community with valuable, reliable, and safe information.
 - **Empower Users:** The website aims to empower users by allowing them to share their own recipes and have control over their content. A platform has been provided where users can showcase their culinary creativity and expertise, contributing to the growth of the vegan community.
-- **Security and Privacy:** Protecting user information and maintaining data security is a paramount concern. Robust authentication and authorization mechanisms have been implemented to safeguard sensitive data and user accounts.
 ### Agile Methodology
 Agile Methodology has been used to plan this project. This was implemented through Github and the Project Board. Through the use of the board in the projects view in Github, the project was divided into the following three sections: 
 - **To Do:** All the User stories were initially entered in the *To Do* column.
