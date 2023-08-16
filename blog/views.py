@@ -10,6 +10,10 @@ from .forms import RecipeForm
 from django.utils.text import slugify
 
 
+def handler404(request, exception):
+    return render(request, '404.html', status=404)
+
+
 class RecipeList(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by("-created_on")
