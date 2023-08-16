@@ -55,8 +55,10 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Testing
 ## Bugs
 #### Solved Bugs
-- A User Profile was not being created each time a User registered with the website as it should have been. This was resolved by creating a signals.py file in the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
-- Automated tests were not working because of the Postgres database. This was resolved by connecting temporarily with the local db.sqlite3 database while running unit tests.
+- There was an issue where a User Profile wasn't being created upon User registration on the website, contrary to the expected behavior. This problem was resolved by introducing a 'signals.py' file into the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
+- The User Profile page was displaying all of django's default success messages including login and logout instead of solely displaying the ones specified in the views.py file. This was resolved by adding an extra_tag with each message that allowed for only those specific messages to be displayed while maintaining the styling associated with traditional Django success messages.
+- On the Recipe Detail page, when a User attempted to post a comment, an error was appearing instead of the expected behavior, which was the page refreshing with a success message presented on the screen. The resolution for this issue involved implementation of a 'method_decorator(login_required)' on the comment post method within the RecipeDetail view.
+- Automated tests were not working because of the Postgres database. This was resolved by temporarily establishing a connection with the local 'db.sqlite3' database while conducting unit tests.
 ## Deployment
 ##### 1. Create your Heroku app
 * Navigate to [Heroku](https://id.heroku.com).
