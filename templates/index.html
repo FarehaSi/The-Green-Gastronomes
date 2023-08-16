@@ -25,7 +25,7 @@
                             <div>
                                 {% if "placeholder" in recipe.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689770826/default-image_vtjs7h.png">
+                                    src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689770826/default-image_vtjs7h.png" alt="Culinary creation of the author">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
                                 {% endif %}
