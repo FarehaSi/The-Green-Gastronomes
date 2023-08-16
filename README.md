@@ -15,7 +15,7 @@ Agile Methodology has been used to plan this project. This was implemented throu
 - **In Progress:** During the development phase, the stories were moved into the *In Progress* column.
 - **Done:** In the final stage, they were moved into *Done* as the development on the respective stories was completed.
 ### Epics & User Stories
-The following epics were created which were further developed into 20 specific User Stories.
+The following epics were created which were further developed into 17 specific User Stories.
 #### Epic 1: Recipe Management
 This epic focuses on all aspects related to managing recipes on the platform. It includes providing an admin interface for administrators to post recipes with necessary details and enabling users to submit their own recipes. The epic also covers the functionality for administrators to review and approve user-submitted recipes to ensure content quality and appropriateness. Additionally, users should be able to edit or delete their own recipes as needed.
 ##### Related User Stories
@@ -44,10 +44,9 @@ The fourth epic focuses on enhancing the user interface and overall user experie
 ##### Related User Stories
 - As an administrator I can provide a user-friendly and visually appealing interface, with proper styling and responsive design so that user experience can be enhanced.
 - As an administrator I can have the application handle errors gracefully and provide informative error messages so that users can understand and resolve any issues that may occur.
-#### Epic 5: Security and Privacy
-This epic centers around ensuring the security and privacy of sensitive information on the platform. It includes implementing robust authentication and authorization mechanisms to protect user accounts and sensitive data. Additionally, the epic involves the approval process for user comments to filter out objectionable content and maintain a safe environment for users.
+#### Epic 5: Comment Moderation for a Safe User Environment
+This epic centers around enabling administrators to review and manage comments for the purpose of filtering out objectionable content and maintaining a secure user environment. It includes the implementation of an efficient comment approval process that empowers administrators to approve or disapprove comments. By doing so, the platform ensures that objectionable content is effectively filtered out, creating a safe and welcoming space for users.
 ##### Related User Stories
-- As an administrator I can have appropriate authentication and authorization mechanisms in place so that security of sensitive information is ensured.
 - As an administrator I can approve or disapprove comments so that I can filter out objectionable comments.
 #### Epic 6: Drafts and Unpublished Content
 The final epic deals with the management of drafts and unpublished content. It includes providing administrators with the ability to create draft posts and save them for completion at a later time. This functionality can be useful for preparing content without immediately publishing it to the public.
