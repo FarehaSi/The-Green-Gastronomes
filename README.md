@@ -54,6 +54,9 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Technologies Used
 ## Testing
 ## Bugs
+#### Solved Bugs
+- A User Profile was not being created each time a User registered with the website as it should have been. This was resolved by creating a signals.py file in the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
+- Automated tests were not working because of the Postgres database. This was resolved by connecting temporarily with the local db.sqlite3 database while running unit tests.
 ## Deployment
 ##### 1. Create your Heroku app
 * Navigate to [Heroku](https://id.heroku.com).
