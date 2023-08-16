@@ -151,7 +151,7 @@ Forking enables a third party to create a copy of the repository in order to vie
 #### Code
 - The Code Institute <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/" target="_blank">I Think Therefore I Blog</a> walkthrough project assisted and guided in the setup and basic structure of this project
 - <a href="https://docs.djangoproject.com/en/3.2/" target="_blank">Django Documentaion</a> was used to assist in multiple queries
-- <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> has been instrumental in helping resolve bugs
+- <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> has been instrumental in guiding through differnet parts of code and helping resolve bugs
 - The Code Institute <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/5666926980b74689b37a0d5da3cec510/" target="_blank">Hello Django</a> helped with writing tests for the python code
 #### Media
 - The fonts were sourced using <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
