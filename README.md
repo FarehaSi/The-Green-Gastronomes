@@ -30,12 +30,11 @@ The second epic deals with user authentication and profile management. It encomp
 - As a user I can log in to my account securely so that I can access my personalized content and perform actions that require authentication.
 - As a user I can have a user profile so that I can view and update my personal information.
 #### Epic 3: User Interaction with Recipes
-This epic revolves around user interaction with recipes on the platform. It includes enabling users to view a list of available recipes, detailed views for individual recipes, and the ability to leave comments on recipes. Users should also be able to edit or delete their comments as needed. Additionally, users and administrators can view the number of likes and comments on each post, allowing them to gauge popularity and engagement.
+This epic revolves around user interaction with recipes on the platform. It includes enabling users to view a list of available recipes, detailed views for individual recipes, and the ability to leave comments on recipes. Additionally, users and administrators can view the number of likes and comments on each post, allowing them to gauge popularity and engagement.
 ##### Related User Stories
 - As a user I can view a list of recipes so that I can explore the available options.
 - As a user I can view the details of a specific recipe so that I can follow the recipe to prepare the dish.
 - As a user I can leave comments on recipes so that I can share my feedback or ask questions.
-- As a user I can edit and delete my own comments on recipes so that I can make changes or remove them if I want to.
 - As a user / administrator I can view the number of likes on each post so that I can see which is the most popular or viral.
 - As a user/ administrator I can view comments on an individual post so that I can read the conversation.
 - As a user I can like a post so that I can interact with the content.
