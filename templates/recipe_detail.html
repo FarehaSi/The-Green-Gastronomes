@@ -12,9 +12,9 @@
         <div class="col-md-6 masthead-image">
             {% if "placeholder" in recipe.featured_image.url %}
             <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689770826/default-image_vtjs7h.png"
-                width="100%">
+                width="100%" alt="Culinary creation of the author">
             {% else %}
-            <img src="{{ recipe.featured_image.url }}" class="img-fluid" width="100%">
+            <img src="{{ recipe.featured_image.url }}" class="img-fluid" width="100%" alt="Colorful food illustration">
             {% endif %}
         </div>
     </div>

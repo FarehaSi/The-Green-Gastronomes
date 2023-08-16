@@ -16,9 +16,9 @@
         <div class="form-group">
             <label for="id_profile_picture">Profile Picture:</label>
             {% if "placeholder" in user_profile.profile_picture.url %}
-            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png" class="profile-picture">
+            <img src="https://res.cloudinary.com/djnre3b2t/image/upload/v1689866275/profile-picture_qmey1g.png" class="profile-picture" alt="Portrait of the user">
             {% else %}
-            <img src="{{ user_profile.profile_picture.url }}" class="profile-picture">
+            <img src="{{ user_profile.profile_picture.url }}" class="profile-picture" alt="Character illustration for the profile.">
             {% endif %}
         </div>
 
