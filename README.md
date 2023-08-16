@@ -55,6 +55,19 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Testing
 ## Bugs
 ## Deployment
+#### Cloning
+To create a clone of the repository within your local development environment which makes it easier to fix merge conflicts, add or remove files, and push larger commits, follow these steps:
+- Log in to GitHub, access the specific GitHub Repository [The Green Gastronomes](https://github.com/FarehaSi/The-Green-Gastronomes)
+- Above the file list on the repository page locate and click the 'Code' button (beside the 'Add file' button)
+- Copy the provided link depending on your desired option for either 'HTTPS', 'SSH key' or 'GitHub CLI.
+- Open Git Bash and change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone, and then paste the specific URL you copied in Step 3.
+#### Forking
+Forking enables a third party to create a copy of the repository in order to view and/or make changes without affecting the original. To Fork this repositary:
+- Navigate to GitHub project repositary [The Green Gastronomes](https://github.com/FarehaSi/The-Green-Gastronomes)
+- In the right hand corner see the "Fork" section and click on it.
+- Select an owner for the forked repository.
+- Click Create fork button.
 ## Credits
 #### Code
 - The Code Institute <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/" target="_blank">I Think Therefore I Blog</a> walkthrough project assisted and guided in the setup and basic structure of this project
@@ -66,4 +79,4 @@ The final epic deals with the management of drafts and unpublished content. It i
 - All icons were taken from <a href="https://www.fontawesome.com/" target="_blank">Font Awesome</a>
 - All images have been obtained from <a href="https://www.pexels.com/" target="_blank">Pexels</a>
 ## Acknowledgement
-I am grateful to my mentor Akshat Gard for his guidance and support.
+I am grateful to my mentor Akshat Garg for his guidance and support.
