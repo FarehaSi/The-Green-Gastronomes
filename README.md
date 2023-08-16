@@ -15,7 +15,7 @@ Agile Methodology has been used to plan this project. This was implemented throu
 - **In Progress:** During the development phase, the stories were moved into the *In Progress* column.
 - **Done:** In the final stage, they were moved into *Done* as the development on the respective stories was completed.
 ### Epics & User Stories
-The following epics were created which were further developed into 17 specific User Stories.
+The following epics were created which were further developed into 16 specific User Stories.
 #### Epic 1: Recipe Management
 This epic focuses on all aspects related to managing recipes on the platform. It includes providing an admin interface for administrators to post recipes with necessary details and enabling users to submit their own recipes. The epic also covers the functionality for administrators to review and approve user-submitted recipes to ensure content quality and appropriateness. Additionally, users should be able to edit or delete their own recipes as needed.
 ##### Related User Stories
