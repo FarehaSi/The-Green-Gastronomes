@@ -55,28 +55,93 @@ The final epic deals with the management of drafts and unpublished content. It i
 ## Testing
 ## Bugs
 ## Deployment
-The site was deployed via Heroku using the following steps:
-- Logged in to Heroku
-- From the main Heroku Dashboard page selected 'New' and then 'Create New App'
-- Gave the project a name and selected suitable region, then clicked on 'Create App'
-- Navigated to the Settings tab
-- Under 'Config Vars' clicked on 'Reveal Config Vars'
-- Added the following keys with their respective values:
-  1. DATABASE_URL
-  2. PORT
-  3. SECRET_KEY
-  4. DISABLE_COLLECTSTATIC (removed before final deployment)
-  5. CLOUDINARY_URL
-  6. HEROKU_POSTGRESQL_WHITE_URL
-   
-#### Cloning
+##### 1. Create your Heroku app
+* Navigate to [Heroku](https://id.heroku.com).
+* Create a Heroku account by entering your email address and a password (or login if you have one already).
+* Activate the account through the authentication email sent to your email account.
+* Click the **new button** on the top right corner of the screen and select create a new app from the dropdown menu.
+* Enter a unique name for the application.
+* Select the appropriate region for the application.
+* Click create app.
+* Click Reveal Config Vars and add a new record with `DATABASE_URL`.
+* Click Reveal Config Vars and add a new record with `PORT`.
+* Click Reveal Config Vars and add a new record with the `DISABLE_COLLECTSTATIC = 1`(note: this must be either removed or set to 0 for final deployment).
+* Next, scroll down to the Buildpack section, click `Add Buildpack` select python and click Save Changes.
+##### 2. Set up Environment Variables
+* In you IDE create a new env.py file in the top level directory.
+* Add env.py to the .gitignore file.
+* In env.py import the os library.
+* In env.py add `os.environ["DATABASE_URL"]` = "Paste the link copied from Heroku DATABASE_URL".
+* In env.py add `os.environ["SECRET_KEY"] = "Make up your own random secret key"`.
+* In Heroku Settings tab Config Vars enter the same `SECRET_KEY` created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
+##### 3. Setting up settings.py
+* In your Django 'settings.py' file type:
+
+ ```
+ from pathlib import Path
+ import os
+ import dj_database_url
+
+ if os.path.isfile("env.py"):
+  import env
+ ```
+* Remove the default insecure secret key in settings.py and replace with the link to the secret key variable in Heroku by typing: `SECRET_KEY = os.environ.get(SECRET_KEY)`
+* Comment out the `DATABASES` section in settings.py and replace with:
+```
+DATABASES = {
+  'default': 
+  dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }`
+```
+* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file by typing: `os.environ["CLOUDINARY_URL"] = "cloudinary://<insert-your-url>"`
+* In Heroku, click Reveal Config Vars and add a new record with the `CLOUDINARY_URL`
+* Add Cloudinary libraries to the installed apps section of settings.py file:
+ ```
+ 'cloudinary_storage'
+ 'django.contrib.staticfiles''
+ 'cloudinary'
+ ```
+* Connect Cloudinary to the Django app in `settings.py`:
+```
+STATIC_URL = '/static'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE =
+'cloudinary_storage.storage.MediaCloudinaryStorage'
+* Link file to the templates directory in Heroku 
+* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
+'templates')
+```
+* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
+* Add Heroku Hostname to ALLOWED_HOSTS: 
+```ALLOWED_HOSTS = ['<Heroku_app_name>.herokuapp.com', 'localhost']```
+* Create Procfile at the top level of the file structure and insert the following:
+    ``` web: gunicorn PROJECT_NAME.wsgi ```
+
+* Commit and push the code to the GitHub Repository.
+##### 4. Heroku Deployment: 
+* Click Deploy tab in Heroku.
+* Select Github as the deployment method.
+* Confirm you want to connect to GitHub.
+* Search for the repository name and click the connect button to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
+* Scroll to the bottom of the deploy page and select the preferred deployment type.
+* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+##### 5. Final Deployment
+In the IDE:
+* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
+* In Heroku settings config vars change the `DISABLE_COLLECTSTATIC` value to 0
+* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
+* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+### Cloning
 To create a clone of the repository within your local development environment which makes it easier to fix merge conflicts, add or remove files, and push larger commits, follow these steps:
 - Log in to GitHub, access the specific GitHub Repository [The Green Gastronomes](https://github.com/FarehaSi/The-Green-Gastronomes)
 - Above the file list on the repository page locate and click the 'Code' button (beside the 'Add file' button)
 - Copy the provided link depending on your desired option for either 'HTTPS', 'SSH key' or 'GitHub CLI.
 - Open Git Bash and change the current working directory to the location where you want the cloned directory to be made.
 - Type git clone, and then paste the specific URL you copied in Step 3.
-#### Forking
+### Forking
 Forking enables a third party to create a copy of the repository in order to view and/or make changes without affecting the original. To Fork this repositary:
 - Navigate to GitHub project repositary [The Green Gastronomes](https://github.com/FarehaSi/The-Green-Gastronomes)
 - In the right hand corner see the "Fork" section and click on it.
