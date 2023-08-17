@@ -130,6 +130,52 @@ It collapses into a hamburger on smaller devices.
 ![NavbarSmall](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/bfd2f9bf-6715-4c93-8f7d-613c84c34a6a)
 #### Footer
 At the bottom of the page, user's will find the footer containing links to the blog's social media platforms.
+<br>
+<br>
+![Footer](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/dd93c3f5-fa2b-4208-9aa6-40bf8b82633d)
+### Registeration
+Here, users create an account with the site and are able to post their own recipes. By registering with the site, users can also interact with others by leaving comments and liking posts.
+<br>
+<br>
+![Screenshot (175)](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/4dcc0982-8207-4030-a012-f12ad6556960)
+<br>
+<br>
+The login and logout pages carry a similar layout.
+### Recipe Detail Page
+When a user clicks on their chosen recipe from the home page, they are directed to the recipe detail page.
+<br>
+<br>
+![RecipeDetail](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/6013c541-1411-438c-a6a5-20cabeb0abf5)
+<br>
+<br>
+Beneath the post is the opportunity for users to interact with others by commenting or liking the post. A recipe can be liked by simply clicking on the heart icon. While a comment can be posted in the <i>'Leave a comment'</i> section.
+<br>
+<br>
+![RecipeDetail2](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/6881af29-09d7-4518-a59a-37a7a451f575)
+<br>
+<br>
+#### User Profile Page
+This page displays the individual users' credentials. Users can choose to upload their profile picture. It also serves as a platform for users to manage their recipes.
+<br>
+<br>
+![UserProfile](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/9d2d5d94-aeea-42bf-a181-be659772b0c8)
+<br>
+<br>
+##### Add Recipe
+In the last section of the user profile page, users can add, edit and/or delete their posts. When clicked on the relevant section, a page will be opened that would allow them to carry out their respctive task.
+<br>
+<br>
+![AddRecipe](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/1978f60e-2de1-45d5-ac96-44814a7849a9)
+<br>
+<br>
+The Edit Recipe carries a similar layout.
+##### Delete Recipe
+Users are asked to confirm before they want to delete a post. This minimizes the risk of accidental loss.
+<br>
+<br>
+![Delete Recipe](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/bc969973-19f9-43c7-bf17-650fbfe36ef5)
+<br>
+<br>
 ## Technologies Used
 ### Languages Used
 * [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
