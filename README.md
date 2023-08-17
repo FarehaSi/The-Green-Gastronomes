@@ -216,6 +216,25 @@ Views.py: ![views py (2)](https://github.com/FarehaSi/The-Green-Gastronomes/asse
 Style.css: ![style css](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/729dc581-e8ea-415c-bcd5-928fd615be03)
 ##### HTML using [W3C HTML validator](https://validator.w3.org/)
 ![HomePage](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/f51a070a-294f-4647-8bb6-2d9b86d26e42)
+<br>
+<br>
+Users can register with the website: 
+![userRegisteration](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/cd447bbe-f830-4d2d-be31-f733b662fecd)
+<br>
+<br>
+Their user profile is created:
+![UserProfile](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/b9de2cfd-195c-45a5-8f8a-a0ec7b7afff9)
+<br>
+<br>
+They can manage their recipes. Add new ones and update or delete old ones. When they do any of that, success messages are display on the screen.
+![addRecioe](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/e237f9ac-a018-4001-9c9e-53bc599b08e1)
+![deleteRecipe](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/f5d9c585-e685-4be2-bebe-2c56b36be44f)
+![recipeDeleted](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/add501db-2b20-49aa-856b-f94b25a79804)
+<br>
+<br>
+Users can also interact with recipes posted by others.
+![comment](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/7985e86d-6dcb-422c-8d74-8d4cf2417a4a)
+![comment2](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/0e44c4a7-9146-4d71-ad90-003db18e321a)
 ## Bugs
 #### Solved Bugs
 - There was an issue where a User Profile wasn't being created upon User registration on the website, contrary to the expected behavior. This problem was resolved by introducing a 'signals.py' file into the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
