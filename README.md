@@ -104,6 +104,19 @@ Thoughtfully structured layouts guide the readers seamlessly through recipes, wi
 The combination of Lobster and Quicksand fonts creates a harmonious balance between playfulness and professionalism, mirroring the holistic approach of a vegan lifestyle. The color palette, with its calming white backdrop, grounding black text, and invigorating green accents, establishes a soothing yet invigorating visual rhythm. Collectively, these design choices synergize to encapsulate the essence of Vegan Vibes: a platform that promotes the joy of plant-based cooking, environmental consciousness, and overall well-being.
 In essence, the design of The Green Gastronomes is a deliberate orchestration of fonts, colors, imagery, and layout, all meticulously chosen to mirror the core values of veganism and create an immersive experience that resonates with the readers.
 ## Features
+### Home Page
+On the landing page, the user is introduced to the vibrant atmosphere of the website – colorful, hip, and inviting. At the top, there's a header that features the logo and a navigation bar. Right below is the hero image accompanied by text that introduces the user to the purpose and content of the website.
+<br>
+<br>
+![Home](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/436d4081-7c91-4342-819d-54b7bd6131e5)
+<br>
+<br>
+As the user scrolls down, they encounter a list of blog posts/recipes accompanied by enticing pictures and excerpts designed to encourage users to click on them and delve deeper into the content.
+<br>
+<br>
+![RecipeList](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/42f525d0-a07b-4f3e-9e6f-25d6d8516ca8)
+![RecipeList2](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/7a684dd5-d5ec-4bed-b220-059dfef0bd67)
+At the bottom of the page, user's will find the footer containing links to the blog's social media platforms.
 ## Technologies Used
 ### Languages Used
 * [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
