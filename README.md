@@ -202,6 +202,20 @@ Users are asked to confirm before they want to delete a post. This minimizes the
 * [Google Fonts:](https://fonts.google.com/) used for the Roboto font
 * [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 ## Testing
+Both manual and automated testing have been performed to maintain site integrity.
+### Manual Testing
+#### Validator Testing
+The following validation tools have been used to test HTML, CSS, PYTHON codes. 
+##### Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
+Forms.py: ![forms py](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/95e8a8c6-527a-4a83-9d72-0c171064e0b0)
+Models.py: ![models py](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/cfe2c457-d5eb-47b4-8402-2a784793eba0)
+Signals.py: ![signals py](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/edf8c9b9-d975-464d-8eed-2d79fee96d6a)
+URLs.py: ![urls py](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/c52097f7-8db5-4ce0-9234-5d2ef9063078)
+Views.py: ![views py (2)](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/3cb89a93-9ea9-4949-93e2-9faa7d8e5ef2)
+##### CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+Style.css: ![style css](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/729dc581-e8ea-415c-bcd5-928fd615be03)
+##### HTML using [W3C HTML validator](https://validator.w3.org/)
+
 ## Bugs
 #### Solved Bugs
 - There was an issue where a User Profile wasn't being created upon User registration on the website, contrary to the expected behavior. This problem was resolved by introducing a 'signals.py' file into the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
