@@ -215,7 +215,7 @@ Views.py: ![views py (2)](https://github.com/FarehaSi/The-Green-Gastronomes/asse
 ##### CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
 Style.css: ![style css](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/729dc581-e8ea-415c-bcd5-928fd615be03)
 ##### HTML using [W3C HTML validator](https://validator.w3.org/)
-
+![HomePage](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/f51a070a-294f-4647-8bb6-2d9b86d26e42)
 ## Bugs
 #### Solved Bugs
 - There was an issue where a User Profile wasn't being created upon User registration on the website, contrary to the expected behavior. This problem was resolved by introducing a 'signals.py' file into the directory that used the 'post_save' signal for the 'User' model to create a 'UserProfile' and the signals were then imported to the apps.py file.
