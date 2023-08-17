@@ -81,7 +81,28 @@ Building upon the insights gained in the preceding discovery phase, the tasks of
 - Creating a custom 404 Error page
 - Validation checks were carried for all the html files, css file and python code
 - Final Deployment steps
-## Design
+## Design - UI
+The design philosophy embodies the essence of a vibrant and conscious lifestyle. The blog is meticulously crafted to reflect the principles of plant-based living, sustainability, and visual harmony. Here's an overview of the design elements that come together to create a cohesive and captivating theme:
+### Typography
+#### Logo & Headings (Font: Lobster)
+The curvy and playful lines of the Lobster font evoke a sense of warmth and approachability making the page inviting and enjoyable for everyone.
+#### Body Text (Font: Quicksand)
+Quicksand's clean and modern appearance aligns with focus on clarity and readability, allowing readers to effortlessly explore the recipes and content.
+### Color Palette
+#### Background (White)
+A clean white background serves as a canvas, spotlighting our content and enhancing the overall readability of the blog.
+#### Font Color (Black)
+The black font color exudes elegance and timelessness, emphasizing the reliability.
+#### Links (Green)
+The vibrant green hue of the links not only adds a pop of color but also signifies the flourishing nature of plant-based living.
+### Logo & Imagery
+The website's logo, featuring the Lobster font, captures the dynamic energy of our blog, radiating a sense of enthusiasm for plant-based cooking.
+While the imagery showcases vibrant vegetables, and delectable vegan dishes, resonating with the freshness and abundance of plant-based ingredients.
+### Layout & Composition
+Thoughtfully structured layouts guide the readers seamlessly through recipes, with ease of navigation. Whitespace is generously used to ensure a clutter-free experience, emphasizing the purity and simplicity of vegan cuisine.
+### Visual Harmony & Theme
+The combination of Lobster and Quicksand fonts creates a harmonious balance between playfulness and professionalism, mirroring the holistic approach of a vegan lifestyle. The color palette, with its calming white backdrop, grounding black text, and invigorating green accents, establishes a soothing yet invigorating visual rhythm. Collectively, these design choices synergize to encapsulate the essence of Vegan Vibes: a platform that promotes the joy of plant-based cooking, environmental consciousness, and overall well-being.
+In essence, the design of The Green Gastronomes is a deliberate orchestration of fonts, colors, imagery, and layout, all meticulously chosen to mirror the core values of veganism and create an immersive experience that resonates with the readers.
 ## Features
 ## Technologies Used
 ### Languages Used
