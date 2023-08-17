@@ -1,5 +1,6 @@
 # The Green Gastronomes
-Welcome to The Green Gastronomes - a multiauthor vegan recipe blog! This website is designed with a user-friendly and visually appealing interface, ensuring an enhanced user experience. From exploring a diverse list of vegan recipes to viewing detailed preparation guides, the site caters to all culinary enthusiasts. Registered users can not only interact with content, leaving comments and likes, but also share their own delightful creations with the community.
+Welcome to [The Green Gastronomes](https://green-gastronomes-1952abf961a7.herokuapp.com/) - a multiauthor vegan recipe blog! This website is designed with a user-friendly and visually appealing interface, ensuring an enhanced user experience. From exploring a diverse list of vegan recipes to viewing detailed preparation guides, the site caters to all culinary enthusiasts. Registered users can not only interact with content, leaving comments and likes, but also share their own delightful creations with the community.
+![Mockup](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/fcabb011-0845-4864-b9a1-336f54384a17)
 ## User Experience - UX
 ### Site Aims
 The site aims to achieve the following:
