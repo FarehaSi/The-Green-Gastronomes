@@ -50,6 +50,36 @@ This epic centers around enabling administrators to review and manage comments f
 The final epic deals with the management of drafts and unpublished content. It includes providing administrators with the ability to create draft posts and save them for completion at a later time. This functionality can be useful for preparing content without immediately publishing it to the public.
 ##### Related User Stories
 - As an administrator I can create draft posts so that I can finish writing the content later.
+### Tasks
+Building upon the insights gained in the preceding discovery phase, the tasks of the development phase were executed in the following order:
+#### Before Project Inception
+- Designing an Entity Releationship Diagaram and Wireframing
+- Creating a Repository in GitHub
+- Creating Project, Epics, User Stories and preparing the Project Board
+#### Creation of Project in GitPod
+- Creating the django project
+- Deploying app to Heroku
+- Creating Database Models
+- Setting up models.py file in the 'blog' directory
+- Building the Admin site
+- Installing Allauth for sign in, sign up and sign out templates
+- Installing crispy-forms to add styles to Django account templates
+- Creating base.html - Navbar and Footer content, which extended to all the other template files
+- Adding hero image & content
+- Adding responsiveness to navigation and footer
+- Creating index.html, view and styling
+- Setting up templates for signup, login and logout 
+- Setting up other template files with views.py and urls.py
+- Allowing user's to like and comment
+- recipe_detail.html (to view full posts)
+- user_profile.html (for user's to manage their personal information and blog posts)
+- add_recipe.html (to allow user's to share their own creations)
+- edit_recipe.html (to allow user's to update their posts)
+- delete_recipe.html (to allow user's to delete their posts)
+- Writing scripts for automated testing
+- Manual Testing was carried throughout the process
+- Validation checks were carried for all the html files, css file and python code
+- Final Deployment steps
 ## Design
 ## Features
 ## Technologies Used
