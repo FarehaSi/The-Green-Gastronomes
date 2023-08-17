@@ -116,6 +116,19 @@ As the user scrolls down, they encounter a list of blog posts/recipes accompanie
 <br>
 ![RecipeList](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/42f525d0-a07b-4f3e-9e6f-25d6d8516ca8)
 ![RecipeList2](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/7a684dd5-d5ec-4bed-b220-059dfef0bd67)
+<br>
+#### Navbar
+The Navbar changes when th user logs in.
+<br>
+<br>
+![NavbarLogin](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/6741cb84-ac56-4694-abba-e34439556e6f)
+<br>
+<br>
+It collapses into a hamburger on smaller devices.
+<br>
+<br>
+![NavbarSmall](https://github.com/FarehaSi/The-Green-Gastronomes/assets/116716786/bfd2f9bf-6715-4c93-8f7d-613c84c34a6a)
+#### Footer
 At the bottom of the page, user's will find the footer containing links to the blog's social media platforms.
 ## Technologies Used
 ### Languages Used
