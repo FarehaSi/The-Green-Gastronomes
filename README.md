@@ -78,6 +78,7 @@ Building upon the insights gained in the preceding discovery phase, the tasks of
 - delete_recipe.html (to allow user's to delete their posts)
 - Writing scripts for automated testing
 - Manual Testing was carried throughout the process
+- Creating a custom 404 Error page
 - Validation checks were carried for all the html files, css file and python code
 - Final Deployment steps
 ## Design
